@@ -238,7 +238,7 @@ func (h *BotHandler) HandleFile(ctx context.Context, msg *bot.Message) error {
 <b>Name:</b> <code>%s</code>
 <b>Size:</b> %s
 🔗 <b>Permanent Link:</b>
-%s`,
+<code>%s</code>`,
 		utils.EscapeHTML(record.FileName),
 		utils.FormatFileSize(record.FileSize),
 		link,

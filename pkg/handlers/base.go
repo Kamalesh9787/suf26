@@ -112,11 +112,11 @@ func (h *BotHandler) GetAboutText(ctx context.Context) string {
 │
 ├🔹 <b>Hosted On:</b> <a href="https://vercel.com">Vercel</a>
 │
-├🔸 <b>Developer:</b> <a href="https://github.com/mrabhi2k3">MrAbhi2k3</a>
+├🔸 <b>Developer:</b> <a href="https://github.com/">Unknown</a>
 │
 ├🔹 <b>Bot Support:</b> <a href="https://t.me/%s">Support</a>
 │
-├🔸 <b>Bot Updates:</b> <a href="https://github.com/MrAbhi2k3/TG-FileStore">Updates</a>
+├🔸 <b>Bot Updates:</b> <a href="https://github.com/MrAbhi2k3/Smile_Uploads">Updates</a>
 │
 ╰──────[ 😎 ]───────────⍟`,
 		botUsername,
@@ -200,7 +200,7 @@ func (h *BotHandler) SendForceSubPrompt(ctx context.Context, chatID int64, retry
 	var kbRows [][]bot.InlineKeyboardButton
 	if inviteLink != "" {
 		kbRows = append(kbRows, []bot.InlineKeyboardButton{
-			{Text: "📢 Join Channel", URL: inviteLink},
+			{Text: "📢 Join Channel", URL: "https://t.me/smile_uploads"},
 		})
 	}
 
